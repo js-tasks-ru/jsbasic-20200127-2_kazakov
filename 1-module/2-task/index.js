@@ -16,6 +16,9 @@ function isValid(name) {
   return true;
 }
 
+/**
+ * Эту функцию трогать не нужно
+ */
 function sayHello() {
   const userName = prompt('Введите ваше имя');
 
@@ -25,3 +28,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello('user');

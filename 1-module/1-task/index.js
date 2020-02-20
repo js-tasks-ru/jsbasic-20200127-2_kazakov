@@ -3,10 +3,15 @@
  * @param {number} n
  * @returns {number}
  */
+
 function factorial(n) {
-  let result = 1;
-  while(n){
-    result *= n--;
+  if (n == 0) {
+    return 1;
   }
-  return result;
+  let res = 1;
+  while (n > 0) {
+    res *= n;
+    n--;
+  }
+  return res;
 }
