@@ -10,12 +10,15 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  if (name === undefined || name === null || name.indexOf(' ') || name.length < 4) {
+  if (name === undefined || name === null || name.includes(' ') || name.length < 4) {
     return false;
   }
   return true;
 }
 
+/**
+ * Эту функцию трогать не нужно
+ */
 function sayHello() {
   const userName = prompt('Введите ваше имя');
 
@@ -25,3 +28,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello('user');
